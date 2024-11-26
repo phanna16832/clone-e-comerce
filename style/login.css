@@ -1,0 +1,141 @@
+body {
+    background-color: #f0eff2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body .logo-image{
+    display: flex;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 600px;
+}
+
+::placeholder, .loginbtn{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.qr-code, .login-form {
+    /* width: 50%; */
+    margin: 0 0 0 10px;
+    text-align: center;
+}
+
+.qrcode {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* a:hover {
+    text-decoration: underline;
+} */
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:hover, input:focus{
+    background-color: #ccc;
+}
+
+.loginbtn {
+    width: 97%;
+    background-color: #ff6200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 50px 0 0 0;
+}
+
+.loginbtn:hover {
+    background-color: #cc6220;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+header a {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header a.active {
+    border-bottom: 2px solid #ff6200;
+    color: #ff6200;
+}
+
+header .divider{
+    width: 1px;
+    height: 25px;
+    background-color: #ccc;
+    /* position: relative; */
+    margin-top: 5px;
+}
+
+footer .divider{
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+    /* position: relative; */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 8px;
+}
+
+#passwordForm, #smsForm {
+    margin-top: 20px;
+}
+
+.divider-middle-form{
+    width: 1px;
+    height: 250px;
+    background-color: #ccc;
+    margin: 30px 0;
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <!-- logo -->
+    <div class="logo-image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Taobao_Logo.svg/640px-Taobao_Logo.svg.png" alt="taobao-logo">
+    </div>
+    <div class="container">
+        <!-- QR Code Section -->
+        <div class="qr-code">
+            <h2>Scan QR Code to Login</h2>
+            <div class="qrcode" id="qrcode"></div>
+            <a href="#" class="switch-to-password">How to scan QR Code to login</a>
+        </div>
+        <span class="divider-middle-form"></span>
+        <!-- Login Form Section -->
+        <div class="login-form">
+            <header>
+                <a href="#" id="passwordLogin">Password Login</a>
+                <span class="divider"></span>
+                <a href="#" id="smsLogin">SMS Login</a>
+            </header>
+            <section id="passwordForm">
+                <input type="text" placeholder="Account Name / Email / Phone Number"><br>
+                <input type="password" placeholder="Enter your password"><br>
+                <input class="loginbtn" type="submit" value="Login">
+            </section>
+            <section id="smsForm" style="display: none;">
+                <input type="text" placeholder="Phone Number"><br>
+                <input type="text" placeholder="Enter OTP"><br>
+                <input class="loginbtn" type="submit" value="Login with SMS">
+            </section>
+            <footer>
+                <a href="#">Alipay</a>
+                <span class="divider"></span>
+                <a href="#">Dingtalk</a>
+                <span class="divider"></span>
+                <a href="#">Forget Password</a>
+                <span class="divider"></span>
+                <a href="#">Sign Up </a>
+            </footer>
+        </div>
+    </div>
+    <script src="/script/login.js"></script>
+</body>
+</html>
