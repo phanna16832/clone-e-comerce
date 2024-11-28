@@ -1,30 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- bootstrap icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="">Shopping Cart</a></li>
-            <li><a href="">Order history</a></li>
-            <li><a href=""></a></li>
-        </ul>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="">
+            <i class="bi bi-cart"></i>
+            Shopping Cart
+          </a>
+        </li>
+        <li><a href="">Order history</a></li>
+        <li><a href="">Type of product</a></li>
+        <li><a href="">contact-us</a></li>
+      </ul>
     </nav>
     <!-- others navbar -->
-     <aside class="taobao-header">
-        <img src="/img-icon/taobao-logo.png" alt="">
-        <div class="header-nav">
-            <input type="search">
-            <i class="bi bi-camera"></i>
-            <i class="bi bi-search"></i>
+    <aside class="taobao-header">
+      <img src="/img-icon/taobao-logo.png" alt="" />
+      <div class="header-nav">
+        <input type="search" result="2" placeholder="search item here.." />
+        <i class="bi bi-search"></i>
+      </div>
+      <button class="btn">
+        <i class="bi bi-camera" style="width: 40px"></i>
+        find similar items
+      </button>
+    </aside>
+    <!-- header -->
+    <header class="header-container">
+      <div class="left-contain">
+        <div class="type-label">
+          <h4>Type of product</h4>
+          <div class="new-animation">New</div>
         </div>
-     </aside>
-    
-</body>
+        <ul class="menu-list">
+          <li>
+            <i class="bi bi-laptop"></i>
+            Computers / Accessories / Office / Stationery
+          </li>
+          <li>
+            Industrial / Business / Agriculture / Custom
+          </li>
+          <li>
+            <i class="bi bi-phone"></i>
+            Appliances / Phones / Communication / Digital
+          </li>
+          <li>
+            <img src="/img-icon/sofa.png" alt="sofa">
+            Furniture / Home Improvement / Living / Kitchen
+          </li>
+          <li>
+            <img src="/img-icon/clothes.png" alt="clothes">
+            Women's Clothing / Men's Clothing / Underwear / Accessories
+          </li>
+          <li>
+            <img src="/img-icon/sneakers.png" alt="sneakers">
+            Women's Shoes / Men's Shoes / Sports / Outdoor
+          </li>
+          <li>🚗 Cars / Jewelry / Collectibles / Bags</li>
+          <li>🍎 Food / Fresh Produce / Alcohol / Health</li>
+          <li>🍼 Baby Products / Children's Wear / Toys / Pets</li>
+          <li>💄 Beauty / Personal Care / Home Cleaning / Fragrance</li>
+          <li>🎮 Entertainment / Books / Instruments / Flowers</li>
+        </ul>
+      </div>
+      <div class="middle-container">
+        <div class="product-banner"></div>
+        <div class="product"></div>
+      </div>
+    </header>
+  </body>
 </html>
