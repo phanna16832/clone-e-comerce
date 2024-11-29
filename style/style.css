@@ -204,16 +204,18 @@ input[type="search"]::-webkit-search-cancel-button {
 .right-contain {
   background-color: #FFDBBB;
   border-radius: 10px;
-  width: 300px;
+  width: 200px;
+  height: 200px;
   padding: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  justify-content: right;
+  align-items: right;
+  place-self: right;
 }
 
 .profile-info {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between image and text */
+  gap: 5px; /* Space between image and text */
   margin-bottom: 16px; /* Space below the profile section */
 }
 
@@ -260,4 +262,50 @@ input[type="search"]::-webkit-search-cancel-button {
 .actions span:hover,
 .actions i:hover {
   color: #FF5000; /* Text hover color */
+}
+
+
+/**/
+.products-container {
+  margin:0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.product-card img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+.product-card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+.product-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+.product-card span {
+  font-size: 1rem;
+  color: #ff5000;
+  font-weight: bold;
+}
+.product-card button{
+  margin-left: 80px;
+  border:none;
+  border-radius: 5px 4px;
+  background-color: #ff5000;
+  font-weight: bold;
+color: white;
 }
