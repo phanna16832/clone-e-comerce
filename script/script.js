@@ -27,3 +27,10 @@ fetch("https://fakestoreapi.com/products")
 .catch((error) => {
   console.error("Error fetching products:", error);
 });
+
+// Get the current year in footer
+const dateTxt = new Date().getFullYear();
+let date = document.getElementById("date");
+date.innerHTML = dateTxt;
+
+
